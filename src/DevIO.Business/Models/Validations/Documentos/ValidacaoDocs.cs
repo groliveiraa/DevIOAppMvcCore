@@ -120,7 +120,7 @@ namespace DevIO.Business.Models.Validations.Documentos
         public DigitoVerificador ComMultiplicadoresDeAte(int primeiroMultiplicador, int ultimoMultiplicador)
         {
             _multiplicadores.Clear();
-            for (var i = primeiroMultiplicador; i <= ultimoMultiplicador;)
+            for (var i = primeiroMultiplicador; i <= ultimoMultiplicador; i++)
                 _multiplicadores.Add(i);
 
             return this;
